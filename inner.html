@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <title>Дизайн-студия</title>
 </head>
-<body class="inner-page">
+<body>
   <header class="main-header">
     <div class="container clearfix">
       <a class="logo" href="index.html">
@@ -12,16 +12,16 @@
       </a>
       <nav class="main-navigation">
         <ul class="navigation-list">
-          <li>
+          <li class="navigation-item">
             <a class="navigation-link" href="#">Студия</a>
           </li>
-          <li>
+          <li class="navigation-item">
             <a class="navigation-link" href="#">Клиенты</a>
           </li>
-          <li>
+          <li class="navigation-item">
             <a class="navigation-link" href="#">Магазин</a>
           </li>
-          <li>
+          <li class="navigation-item">
             <a class="navigation-link" href="#">Контакты</a>
           </li>
         </ul>
@@ -30,165 +30,159 @@
       <h2 class="title-header">Магазин готовых шаблонов</h2>
     </div>
   </header> 
-  <main class="container">
-    <form action="http://htmlacademy.ru" method="get">
-      <div class="range-filter">
-        <div class="range-controls">
-          <div class="scale">
-            <div class="bar"></div>
+  <main class="main">
+    <div class="container">
+      <form action="http://htmlacademy.ru" method="get">
+        <div class="range-filter">
+          <div class="range-controls">
+            <div class="scale">
+              <div class="bar"></div>
+            </div>
+            <div class="toggle toggle-min"></div>
+            <div class="toggle toggle-max"></div>
           </div>
-          <div class="toggle toggle-min"></div>
-          <div class="toggle toggle-max"></div>
+          <div class="price-controls">
+            <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+            <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+          </div>
+        </div> 
+        <div class="filter-grid">
+          <p class="filter-title">Сетка:</p>
+          <ul class="filter-list">
+            <li class="list">
+              <input type="radio" name="adaptive" id="adaptive-id">
+              <label for="adaptive-id">Адаптивная</label>
+            </li>
+            <li class="list">
+              <input type="radio" name="fixed" id="fixed-id">
+              <label for="fixed-id">Фиксированная</label>
+            </li>
+            <li class="list">
+              <input type="radio" name="rubber" id="rubber-id">
+              <label for="rubber-id">Резиновая</label>
+            </li>
+          </ul>
+        </div> 
+        <div class="filter-qualities">
+          <p class="filter-title">Особенности:</p>
+          <ul class="filter-list">
+            <li class="list">
+              <input type="checkbox" name="slider" id="slider-id" checked>
+              <label for="slider-id">Слайдер</label>
+            </li>
+            <li class="list">
+              <input type="checkbox" name="advantage-block" id="advantage-block-id">
+              <label for="advantage-block-id">Блок преимуществ</label>
+            </li>
+            <li class="list">
+              <input type="checkbox" name="news" id="news-id" checked>
+              <label for="news-id">Новости</label>
+            </li>
+            <li>
+              <input type="checkbox" name="gallery" name="gallery-id">
+              <label for="gallery-id">Галерея</label>
+            </li>
+            <li class="list">
+              <input type="checkbox" name="basket" id="basket-id">
+              <label for="basket-id">Корзина</label>
+            </li>
+          </ul>
+        </div>  
+        <button class="btn btn-filter" type="submit">Показать</button>
+      </form>
+      <div class="pattern-box">  
+        <div class="filter-price">
+          <p class="filter-title">Сортировать:</p>
+          <ul class="filter-type">
+            <li class="filter-type-list">
+              <a class="filter-type-link" href="#">По цене</a>
+            </li>
+            <li class="filter-type-list">
+              <a class="filter-type-link" href="#">По типу</a>
+            </li>
+            <li class="filter-type-list">
+              <a class="filter-type-link" href="#">По названию</a>
+            </li>
+          </ul>
+        </div>  
+        <div class="gallery">
+          <article class="pattern">
+            <div class="broswer"></div>
+            <img class="photo-site" src="img/sedona-page.jpg" width="150" height="25" alt="Sedona">
+            <div class="site-hover">
+              <b class="site-hover-title">Sedona</b>
+              <p class="site-hover-text">Информационный сайт для туристов</p>
+              <a class="btn btn-site-hover">9 900 Руб.</a>
+            </div>
+          </article>
+          <article class="pattern">
+            <div class="broswer"></div>
+            <img class="photo-site" src="img/pink-page.jpg" width="150" height="25" alt="Pink">
+            <div class="site-hover">
+              <b class="site-hover-title">Pink App</b>
+              <p class="site-hover-text">Продуктовый лендинг приложения для IOS и Android</p>
+              <a class="btn btn-site-hover">9 900 Руб.</a>
+            </div>
+          </article>
+          <article class="pattern">
+            <div class="broswer"></div>
+            <img class="photo-site" src="img/borodinski-page.jpg" width="150" height="25" alt="Borodinski">
+            <div class="site-hover">
+              <b class="site-hover-title">Barbershop</b>
+              <p class="site-hover-text">Сайт салона красоты. Для мужчин, да</p>
+              <a class="btn btn-site-hover">9 900 Руб.</a>
+            </div>
+          </article>
+          <article class="pattern">
+            <div class="broswer"></div>
+            <img class="photo-site" src="img/mishki-page.jpg" width="150" height="25" alt="Mishki">
+            <div class="site-hover">
+              <b class="site-hover-title">Mishka</b>
+              <p class="site-hover-text">Интернет-магазин вязаных игрушек</p>
+              <a class="btn btn-site-hover">9 900 Руб.</a>
+            </div>
+          </article>
+          <article class="pattern">
+            <div class="broswer"></div>
+            <img class="photo-site" src="img/study-page.jpg" width="150" height="25" alt="Study">
+            <div class="site-hover">
+              <b class="site-hover-title">A plus</b>
+              <p class="site-hover-text">Лендинг курсов повышения квалификации</p>
+              <a class="btn btn-site-hover">9 900 Руб.</a>
+            </div>
+          </article>
+          <article class="pattern">
+            <div class="broswer"></div>
+            <img class="photo-site" src="img/kvast-page.jpg" width="150" height="25" alt="Кваст">
+            <div class="site-hover">
+              <b class="site-hover-title">Кваст</b>
+              <p class="site-hover-text">Промо-сайт производителя крафтового кваса</p>
+              <a class="btn btn-site-hover">9 900 Руб.</a>
+            </div>
+          </article>
+        </div> 
+        <div class="pages-box">
+          <a class="active page" href="#">1</a>
+          <a class="page" href="#">2</a>
+          <a class="page" href="#">3</a>
+          <a class="page next" href="#">Следующая</a>
         </div>
-        <div class="price-controls">
-          <label class="min-price">от <input name="min-price" type="text" value="0"></label>
-          <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
-        </div>
-      </div> 
-      <div class="filter-grid">
-        <p class="filter-title">Сетка:</p>
-        <ul class="filter-list">
-          <li class="list">
-            <input type="radio" name="adaptive" id="adaptive-id">
-            <label for="adaptive-id">Адаптивная</label>
-          </li>
-          <li class="list">
-            <input type="radio" name="fixed" id="fixed-id">
-            <label for="fixed-id">Фиксированная</label>
-          </li>
-          <li class="list">
-            <input type="radio" name="rubber" id="rubber-id">
-            <label for="rubber-id">Резиновая</label>
-          </li>
-        </ul>
-      </div> 
-      <div class="filter-qualities">   
-        <p class="filter-title">Особенности:</p>
-        <ul class="filter-list">
-          <li class="list">
-            <input type="checkbox" name="slider" id="slider-id" checked>
-            <label for="slider-id">Слайдер</label>
-          </li>
-          <li class="list">
-            <input type="checkbox" name="advantage-block" id="advantage-block-id">
-            <label for="advantage-block-id">Блок преимуществ</label>
-          </li>
-          <li class="list">
-            <input type="checkbox" name="news" id="news-id" checked>
-            <label for="news-id">Новости</label>
-          </li>
-          <li>
-            <input type="checkbox" name="gallery" name="gallery-id">
-            <label for="gallery-id">Галерея</label>
-          </li>
-          <li class="list">
-            <input type="checkbox" name="basket" id="basket-id">
-            <label for="basket-id">Корзина</label>
-          </li>
-        </ul>
       </div>  
-      <button class="btn btn-filter" type="button">Показать</button>
-    </form>
-    <div class="pattern-box">  
-      <div class="filter-price">
-        <p class="filter-title">Сортировать:</p>
-        <ul class="filter-type">
-          <li><a class="filter-type-link" href="#">По цене</a></li>
-          <li><a class="filter-type-link" href="#">По типу</a></li>
-          <li><a class="filter-type-link" href="#">По названию</a></li>
-        </ul>
-      </div>  
-      <div class="gallery">
-        <article class="pattern">
-          <div class="broswer">
-          </div>
-          <img class="photo-site" src="img/sedona-page.jpg" width="150" height="25" alt="Sedona">
-          <div class="site-hover">
-            <b class="site-hover-title">Sedona</b>
-            <p class="site-hover-text">Информационный сайт для туристов</p>
-            <a class="btn btn-site-hover">9 900 Руб.</a>
-          </div>
-        </article>
-        <article class="pattern">
-          <div class="broswer">
-          </div>
-          <img class="photo-site" src="img/pink-page.jpg" width="150" height="25" alt="Pink">
-          <div class="site-hover">
-            <b class="site-hover-title">Pink App</b>
-            <p class="site-hover-text">Продуктовый лендинг приложения для IOS и Android</p>
-            <a class="btn btn-site-hover">9 900 Руб.</a>
-          </div>
-        </article>
-        <article class="pattern">
-          <div class="broswer">
-          </div>
-          <img class="photo-site" src="img/borodinski-page.jpg" width="150" height="25" alt="Borodinski">
-          <div class="site-hover">
-            <b class="site-hover-title">Barbershop</b>
-            <p class="site-hover-text">Сайт салона красоты. Для мужчин, да</p>
-            <a class="btn btn-site-hover">9 900 Руб.</a>
-          </div>
-        </article>
-        <article class="pattern">
-          <div class="broswer">
-          </div>
-          <img class="photo-site" src="img/mishki-page.jpg" width="150" height="25" alt="Mishki">
-          <div class="site-hover">
-            <b class="site-hover-title">Mishka</b>
-            <p class="site-hover-text">Интернет-магазин вязаных игрушек</p>
-            <a class="btn btn-site-hover">9 900 Руб.</a>
-          </div>
-        </article>
-        <article class="pattern">
-          <div class="broswer">
-          </div>
-          <img class="photo-site" src="img/study-page.jpg" width="150" height="25" alt="Study">
-          <div class="site-hover">
-            <b class="site-hover-title">A plus</b>
-            <p class="site-hover-text">Лендинг курсов повышения квалификации</p>
-            <a class="btn btn-site-hover">9 900 Руб.</a>
-          </div>
-        </article>
-        <article class="pattern">
-          <div class="broswer">
-          </div>
-          <img class="photo-site" src="img/kvast-page.jpg" width="150" height="25" alt="Кваст">
-          <div class="site-hover">
-            <b class="site-hover-title">Кваст</b>
-            <p class="site-hover-text">Промо-сайт производителя крафтового кваса</p>
-            <a class="btn btn-site-hover">9 900 Руб.</a>
-          </div>
-        </article>
-      </div>
-    </div>  
-    <div class="pages-box">
-      <a class="active page" href="#">1</a>
-      <a class="page" href="#">2</a>
-      <a class="page" href="#">3</a>
-      <a class="page next" href="#">Следующая</a>
-    </div>
     <div class="map">
       <div class="address">
         <p class="name">Nerds design studio</p>
-        <p class="text">191186, Санкт-Петербург,
-           ул. Б. Конюшенная,д. 19/8</p>
+        <p class="text">191186, Санкт-Петербург, ул. Б. Конюшенная,д. 19/8</p>
         <p class="text">тел. +7(812)275-75-75</p>
         <a class="btn btn-contact-us">Напишите нам</a>
       </div>  
-    </div>  
+    </div>
   </main>
   <footer class="main-footer">
     <div class="container">
       <div class="social">
-        <div class="social-link">
-          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-        </div>
-        <div class="social-link">  
-          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-        </div>
-        <div class="social-link">  
-          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
-        </div>  
+        <a class="social-btn social-btn-vk" href="#">Вконтакте</a>   
+        <a class="social-btn social-btn-fb" href="#">Фейсбук</a> 
+        <a class="social-btn social-btn-inst" href="#">Инстаграм</a>   
       </div>
       <div class="befriend">
         <b class="footer-title">Давайте дружить, это выгодно!</b>
