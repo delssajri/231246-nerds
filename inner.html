@@ -7,10 +7,10 @@
 <body>
   <header class="main-header">
     <div class="container clearfix">
-      <a class="logo" href="index.html">
-        <img src="img/logo.png" width="150" height="25" alt="Логотип Нердс">
-      </a>
       <nav class="main-navigation">
+        <a class="logo" href="index.html">
+          <img src="img/logo.png" width="150" height="25" alt="Логотип Нердс">
+        </a>
         <ul class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-link" href="#">Студия</a>
@@ -25,11 +25,11 @@
             <a class="navigation-link" href="#">Контакты</a>
           </li>
         </ul>
+        <a class="user-block" href="#">Корзина</a>
       </nav>
-      <a class="user-block" href="#">Корзина</a>
       <h2 class="title-header">Магазин готовых шаблонов</h2>
     </div>
-  </header> 
+  </header>
   <main class="main">
     <div class="container">
       <form action="http://htmlacademy.ru" method="get">
@@ -45,7 +45,7 @@
             <label class="min-price">от <input name="min-price" type="text" value="0"></label>
             <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
           </div>
-        </div> 
+        </div>
         <div class="filter-grid">
           <p class="filter-title">Сетка:</p>
           <ul class="filter-list">
@@ -62,7 +62,7 @@
               <label for="rubber-id">Резиновая</label>
             </li>
           </ul>
-        </div> 
+        </div>
         <div class="filter-qualities">
           <p class="filter-title">Особенности:</p>
           <ul class="filter-list">
@@ -79,7 +79,7 @@
               <label for="news-id">Новости</label>
             </li>
             <li>
-              <input type="checkbox" name="gallery" name="gallery-id">
+              <input type="checkbox" name="gallery" id="gallery-id">
               <label for="gallery-id">Галерея</label>
             </li>
             <li class="list">
@@ -87,10 +87,10 @@
               <label for="basket-id">Корзина</label>
             </li>
           </ul>
-        </div>  
+        </div>
         <button class="btn btn-filter" type="submit">Показать</button>
       </form>
-      <div class="pattern-box">  
+      <div class="pattern-box">
         <div class="filter-price">
           <p class="filter-title">Сортировать:</p>
           <ul class="filter-type">
@@ -104,10 +104,18 @@
               <a class="filter-type-link" href="#">По названию</a>
             </li>
           </ul>
-        </div>  
+          <ul class="filter-order">
+            <div class="up"></div>
+            <div class="down"></div>
+          </ul>
+        </div>
         <div class="gallery">
           <article class="pattern">
-            <div class="broswer"></div>
+            <div class="broswer">
+              <span class="round"></span>
+              <span class="round"></span>
+              <span class="round"></span>
+            </div>
             <img class="photo-site" src="img/sedona-page.jpg" width="150" height="25" alt="Sedona">
             <div class="site-hover">
               <b class="site-hover-title">Sedona</b>
@@ -174,15 +182,15 @@
         <p class="text">191186, Санкт-Петербург, ул. Б. Конюшенная,д. 19/8</p>
         <p class="text">тел. +7(812)275-75-75</p>
         <a class="btn btn-contact-us">Напишите нам</a>
-      </div>  
+      </div>
     </div>
   </main>
   <footer class="main-footer">
     <div class="container">
       <div class="social">
-        <a class="social-btn social-btn-vk" href="#">Вконтакте</a>   
-        <a class="social-btn social-btn-fb" href="#">Фейсбук</a> 
-        <a class="social-btn social-btn-inst" href="#">Инстаграм</a>   
+        <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+        <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+        <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
       </div>
       <div class="befriend">
         <b class="footer-title">Давайте дружить, это выгодно!</b>
@@ -190,5 +198,24 @@
       </div>
     </div>
   </footer>
+  <div class="popup">
+    <h1 class="popup-title">Напишите нам</h1>
+    <button type="button">
+    <form action="http://htmlacademy.ru" method="get">
+      <div class="user-data">
+        <label class="user-title" for="name-id">Ваше имя:</label>
+        <input type="text" name="user-name" id="name-id" value="Представьтесь, пожалуйста">
+      </div>
+      <div class="user-data">
+        <label class="user-title" for="email-id">Ваш e-mail:</label>
+        <input type="text" name="user-email" id="email-id" value="Для отправки ответа">
+      </div>
+      <div class="user-text">
+        <label class="user-title" for="letter-id">Текст письма:</label>
+        <textarea name="letter" id="letter-id" row="10">В свободной форме</textarea>
+      </div> 
+      <input type="submit" value="Отправить">
+    </form>
+  </div>
 </body>
-</html>  
+</html>
