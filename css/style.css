@@ -6,12 +6,13 @@ body {
 	color: #363f43;
 }
 
-h2.title {
+.title {
 	font-size: 55px;
 	line-height: 55px;
 	font-weight: bold;
 	color: #000000;
 }
+
 .feature-title {
 	font-size: 24px;
 	line-height: 30px;
