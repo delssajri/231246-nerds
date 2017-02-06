@@ -426,14 +426,14 @@ body {
 }
 
 .price-controls .min-price input {
-	display: block;
+	display: inline-block;
 	box-sizing: border-box;
 	width: 80px;
 	margin: 0;
 }
 
 .price-controls .max-price input {
-	display: block;
+	display: inline-block;
 	box-sizing: border-box;
 	width: 80px;
 }
@@ -441,6 +441,10 @@ body {
 .filter-price {
 	font-size: 18px;
 	min-height: 80px;
+}
+
+.list {
+	list-style-type: none;
 }
 
 .pattern-box {
@@ -459,7 +463,7 @@ body {
 .filter-type {
 	box-sizing: border-box;
 	float: left;
-	width: 300px;
+	width: 290px;
 	font-size: 14px;
 	line-height: 18px;
 	padding: 0;
@@ -468,9 +472,15 @@ body {
 
 .filter-order {
 	float: right;
-	width: 60px;
-	height: 40px;
 	margin: 0;
+	padding: 0;
+}
+
+.up,
+.down {
+	display: inline-block;
+	width: 30px;
+	height: 40px;
 	padding: 0;
 	background-color: red;
 }
