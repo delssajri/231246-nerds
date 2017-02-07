@@ -456,8 +456,8 @@ body {
 }
 
 .filter-title {
-	/*float: left;
-	width: 360px;*/
+	float: left;
+	width: 360px;
 }
 
 .filter-type {
