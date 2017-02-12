@@ -26,7 +26,6 @@ body {
 }
 
 .main-header {
-	width: 1200px;
 	background-color: #eeeeee;
 }
 
@@ -38,6 +37,10 @@ body {
 .main-navigation {
 	width: 1160px;
 	padding: 0 20px;
+	padding-top: 75px;
+	padding-bottom: 9px;
+	padding-right: 25px;
+	padding-left: 25px;
 
 }
 
@@ -46,6 +49,7 @@ body {
 	float: left;
 	width: 160px;
 	padding-top: 50px;
+	padding-left: 20px;
 }
 
 .navigation-list {
@@ -71,8 +75,6 @@ body {
 .navigation-link {
 	display: block;
 	width: 90px;
-	padding-top: 75px;
-	padding-bottom: 9px;
 	padding-right: 25px;
 	padding-left: 25px;
 	text-decoration: none;
@@ -91,7 +93,6 @@ body {
 	box-sizing: border-box;
 	float: right;
 	width: 160px;
-	padding-top: 75px;
 	padding-bottom: 9px;
 	padding-left: 40px;
 	padding-right: 0px;
@@ -109,7 +110,7 @@ body {
 	height: 16px;
 	background-image: url("../img/basket.png");
 	left: 6px;
-	top: 80px;
+	top: 5px;
 }
 
 .slider-container {
@@ -138,24 +139,23 @@ h2.title {
 	margin-bottom: 40px;
 }
 
-.slider-one .text {
-	width: 360px;
+.slider-one {
+	width: 380px;
 }
 
-.slider-two .text {
-	width: 409px;
+.slider-two {
+	width: 520px;
 }
 
-.slider-three .text {
-	width: 345px;
+.slider-three {
+	width: 460px;
 }
 
 .btn {
-	/*margin-bottom: 80px;*/
+	display: block;
 }
 
 .btn-header {
-	display: inline-block;
 	width: 240px;
 	font-size: 16px;
 	line-height: 18px;
@@ -167,7 +167,7 @@ h2.title {
 	color: #ffffff;
 }
 
-.slider-one {
+/*.slider-one {
 	background: url("../img/slide1.png") no-repeat 432px bottom;
 }
 
@@ -177,7 +177,7 @@ h2.title {
 
 .slider-three {
 	background: url("../img/slide3.png") no-repeat 432px bottom;
-}
+}*/
 
 .features {
 	padding: 80px 20px;
@@ -214,7 +214,6 @@ h2.title {
 }
 
 .btn-site {
-	display: inline-block;
 	font-size: 16px;
 	line-height: 18px;
 	text-decoration: none;
@@ -227,7 +226,6 @@ h2.title {
 }
 
 .btn-application {
-	display: inline-block;
 	font-size: 16px;
 	line-height: 18px;
 	text-decoration: none;
@@ -240,7 +238,6 @@ h2.title {
 }
 
 .btn-presentation {
-	display: inline-block;
 	font-size: 16px;
 	line-height: 18px;
 	text-decoration: none;
@@ -392,7 +389,6 @@ h2.title {
 }
 
 .btn-contact-us {
-	display: inline-block;
 	font-size: 16px;
 	line-height: 18px;
 	padding: 18px 0;
@@ -422,12 +418,22 @@ h2.title {
 	vertical-align: top;
 	width: 80px;
 	height: 80px;
+	border-radius: 50%;
 	margin-right: 10px;
-	font-size: 16px;
-	background-color: #e1e1e1;
+	font-size: 0;
 }
+
 .social-btn-inst {
 	margin-right: 0;
+	background: #e1e1e1 url("../img/insta-icon.png") no-repeat 50% 50%;;
+}
+
+.social-btn-vk {
+	background: #e1e1e1 url("../img/vk-icon.png") no-repeat 50% 50%;;
+}
+
+.social-btn-fb {
+	background: #e1e1e1 url("../img/fb-icon.png") no-repeat 50% 50%;;
 }
 
 .befriend {
@@ -467,7 +473,7 @@ h2.title {
 
 .user-title {
 	display: block;
-	width: 80px;
+	width: 100px;
 }
 
 .user-data .text {
@@ -487,7 +493,6 @@ h2.title {
 }
 
 .btn-send {
-	display: inline-block;
 	font-size: 16px;
 	line-height: 18px;
 	text-decoration: none;
@@ -552,7 +557,6 @@ h1.title {
 }
 
 .btn-filter {
-	display: inline-block;
 	font-size: 16px;
 	line-height: 18px;
 	text-decoration: none;
@@ -630,20 +634,38 @@ h1.title {
 }
 
 .pages-box {
-	font-size: 18px;
+	font-size: 0;
 	margin-top: 18px;
 }
+.page {
+	display: inline-block;
+	vertical-align: top;
+	font-size: 18px;
+	text-align: center;
+	width: 50px;
+	height: 50px;
+	margin-right: 8px;
+	color: #000000;
+	background-color: #eeeeee;
+	text-decoration: none;
+}
+
+.page-next {
+	width: 262px;
+	padding: 18px 0;
+}
+
+
 
 .site-hover {
 	position: absolute;
 	bottom: 0;
+	width: 360px;
+	text-align: center;
 	font-size: 16px;
 	line-height: 18px;
-	text-align: center;
 	padding-top: 30px;
 	padding-bottom: 49px;
-	padding-left: 80px;
-	padding-right: 80px;
 	color: #666666;
 	background-color: #e9e9e9;
 }
@@ -655,28 +677,34 @@ h1.title {
 	font-weight: bold;
 }
 
-.site-hover-text .sedona {
-	width: 178px;
+.sedona {
+	width: 200px;
+	margin: 0 auto;
 }
 
-.site-hover-text .pink {
-	width: 250px;
-}
-
-.site-hover-text .barbershop {
-	width: 182px;
-}
-
-.site-hover-text .mishka {
-	width: 160px;
-}
-
-.site-hover-text .plus {
-	width: 220px;
-}
-
-.site-hover-text .kvast {
+.pink {
 	width: 240px;
+	margin: 0 auto;
+}
+
+.barbershop {
+	width: 180px;
+	margin: 0 auto;
+}
+
+.mishka {
+	width: 160px;
+	margin: 0 auto;
+}
+
+.plus {
+	width: 240px;
+	margin: 0 auto;
+}
+
+.kvast {
+	width: 240px;
+	margin: 0 auto;
 }
 
 .map {
