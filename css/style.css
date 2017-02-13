@@ -35,19 +35,18 @@ body {
 }
 
 .main-navigation {
-	width: 1160px;
+	float: left;
+	width: 860px;
 	padding: 0 20px;
 	padding-top: 75px;
 	padding-bottom: 9px;
-	padding-right: 25px;
-	padding-left: 25px;
-
 }
 
 .logo {
 	display: block;
 	float: left;
 	width: 160px;
+	margin-right: 120px;
 	padding-top: 50px;
 	padding-left: 20px;
 }
@@ -55,9 +54,8 @@ body {
 .navigation-list {
 	float: left;
 	width: 560px;
-	margin-left: 140px;
-	margin-right: 140px;
 	padding: 0;
+	margin-right: 140px;
 	margin-top: 0;
 	margin-bottom: 0;
 	font-size: 0;
@@ -90,12 +88,9 @@ body {
 
 .user-block {
 	position: relative;
-	box-sizing: border-box;
 	float: right;
-	width: 160px;
+	width: 80px;
 	padding-bottom: 9px;
-	padding-left: 40px;
-	padding-right: 0px;
 	text-decoration: none;
 	text-transform: uppercase;
 	font-size: 16px;
@@ -104,12 +99,12 @@ body {
 }
 
 .user-block::before {
-	content:"";
+	content: "";
 	position: absolute;
 	width: 16px;
 	height: 16px;
 	background-image: url("../img/basket.png");
-	left: 6px;
+	left: -35px;
 	top: 5px;
 }
 
@@ -153,18 +148,18 @@ h2.title {
 
 .btn {
 	display: block;
-}
-
-.btn-header {
-	width: 240px;
+	padding: 18px 0;
 	font-size: 16px;
 	line-height: 18px;
 	text-decoration: none;
 	text-transform: uppercase;
-	padding: 18px 0;
 	text-align: center;
-	background-color: #fb565a;
 	color: #ffffff;
+}
+
+.btn-header {
+	width: 240px;
+	background-color: #fb565a;
 }
 
 /*.slider-one {
@@ -200,11 +195,11 @@ h2.title {
 }
 
 .feature-title {
+	margin-bottom: 23px;
 	font-size: 24px;
 	line-height: 30px;
 	text-transform: uppercase;
 	font-weight: bold;
-	margin-bottom: 23px;
 }
 
 .feature-item .text {
@@ -214,39 +209,18 @@ h2.title {
 }
 
 .btn-site {
-	font-size: 16px;
-	line-height: 18px;
-	text-decoration: none;
-	text-transform: uppercase;
-	text-align: center;
-	padding: 18px 0;
-	background-color: #fb565a;
-	color: #ffffff;
 	width: 160px;
+	background-color: #fb565a;
 }
 
 .btn-application {
-	font-size: 16px;
-	line-height: 18px;
-	text-decoration: none;
-	text-transform: uppercase;
-	text-align: center;
-	padding: 18px 0;
-	background-color: #00ca74;
-	color: #ffffff;
 	width: 160px;
+	background-color: #00ca74;
 }
 
 .btn-presentation {
-	font-size: 16px;
-	line-height: 18px;
-	text-decoration: none;
-	text-transform: uppercase;
-	text-align: center;
-	padding: 18px 0;
-	background-color: #efc84a;
-	color: #ffffff;
 	width: 160px;
+	background-color: #efc84a;
 }
 
 .content {
@@ -270,10 +244,10 @@ h2.title {
 
 .content-title {
 	display: block;
+	margin-bottom: 34px;
 	font-weight: bold;
 	font-size: 45px;
 	line-height: 45px;
-	margin-bottom: 34px;
 }
 
 .column-left .text {
@@ -286,10 +260,10 @@ h2.title {
 }
 
 .detail {
-	font-weight: bold;
-	text-transform: uppercase;
 	margin: 0;
 	margin-bottom: 28px;
+	font-weight: bold;
+	text-transform: uppercase;
 }
 
 .column-left-list {
@@ -306,10 +280,10 @@ h2.title {
 .column-left-list li::before {
 	content: "";
 	position: absolute;
-	width: 30px;
-	height: 14px;
 	left: -38px;
 	top: 5px;
+	width: 30px;
+	height: 14px;
 	background: url("../img/line.jpg") no-repeat center center;
 }
 
@@ -318,16 +292,16 @@ h2.title {
 }
 
 .column-right-list {
-	font-size: 0;
 	padding: 0;
+	font-size: 0;
 }
 
 .column-right-item {
 	display: inline-block;
+	width: 120px;
 	vertical-align: top;
 	font-size: 16px;
 	line-height: 18px;
-	width: 120px;
 }
 .column-right-item:first-child {
 	display: inline-block;
@@ -353,9 +327,9 @@ h2.title {
 
 .section-link {
 	display: inline-block;
+	width: 300px;
 	height: 184px;
 	vertical-align: top;
-	width: 300px;
 	font-size: 16px;
 }
 
@@ -401,20 +375,12 @@ h2.title {
 }
 
 .btn-contact-us {
-	font-size: 16px;
-	line-height: 18px;
-	padding: 18px 0;
-	text-align: center;
-	text-decoration: none;
-	text-transform: uppercase;
 	background-color: #fb565a;
-	color: #ffffff;
 	width: 100%;
 }
 
 .main-footer {
 	padding: 70px 0; 
-
 }
 
 .social {
@@ -430,8 +396,8 @@ h2.title {
 	vertical-align: top;
 	width: 80px;
 	height: 80px;
-	border-radius: 50%;
 	margin-right: 10px;
+	border-radius: 50%;
 	font-size: 0;
 }
 
@@ -457,9 +423,9 @@ h2.title {
 }
 
 .footer-title {
+	margin-bottom: 8px;
 	font-size: 36px;
 	line-height: 36px;
-	margin-bottom: 8px;
 }
 
 .befriend .text {
@@ -490,7 +456,6 @@ h2.title {
 
 .user-data .text {
 	display: block;
-
 }
 
 .user-text .user-title {
@@ -505,27 +470,19 @@ h2.title {
 }
 
 .btn-send {
-	font-size: 16px;
-	line-height: 18px;
-	text-decoration: none;
-	text-transform: uppercase;
-	text-align: center;
-	padding: 20px 0;
-	background-color: #fb565a;
-	color: #ffffff;
 	width: 260px;
+	background-color: #fb565a;
 }
-
 
 h1.title {
 	width: 840px;
-	font-size: 55px;
-	line-height: 55px;
-	font-weight: bold;
 	margin-top: 87px;
 	margin-bottom: 125px;
 	margin-left: auto;
 	margin-right: auto;
+	font-size: 55px;
+	line-height: 55px;
+	font-weight: bold;
 }
 
 .main-filter {
@@ -569,15 +526,9 @@ h1.title {
 }
 
 .btn-filter {
-	font-size: 16px;
-	line-height: 18px;
-	text-decoration: none;
-	text-transform: uppercase;
-	text-align: center;
-	padding: 20px 0;
+	width: 260px;
 	background-color: #eeeeee;
 	color: #000000;
-	width: 260px;
 }
 
 .pattern-box {
@@ -596,10 +547,10 @@ h1.title {
 	box-sizing: border-box;
 	float: left;
 	width: 290px;
-	font-size: 14px;
-	line-height: 18px;
 	padding: 0;
 	margin-left: 40px;
+	font-size: 14px;
+	line-height: 18px;
 }
 
 .filter-order {
@@ -629,10 +580,10 @@ h1.title {
 .pattern {
 	position: relative;
 	display: inline-block;
-	font-size: 0;
-	vertical-align: top;
 	width: 360px;
 	margin-bottom: 36px;
+	font-size: 0;
+	vertical-align: top;
 }
 
 .pattern:nth-child(2n+1) {
@@ -679,13 +630,13 @@ h1.title {
 
 .page {
 	display: inline-block;
-	font-size: 18px;
 	width: 10px;
 	height: 50px;
 	padding: 0 20px;
 	margin-right: 8px;
 	vertical-align: middle;
 	text-align: center;
+	font-size: 18px;
 	line-height: 50px;
 	color: #000000;
 	background-color: #eeeeee;
@@ -709,11 +660,11 @@ h1.title {
 	position: absolute;
 	bottom: 0;
 	width: 360px;
+	padding-top: 30px;
+	padding-bottom: 49px;
 	text-align: center;
 	font-size: 16px;
 	line-height: 18px;
-	padding-top: 30px;
-	padding-bottom: 49px;
 	color: #666666;
 	background-color: #e9e9e9;
 }
