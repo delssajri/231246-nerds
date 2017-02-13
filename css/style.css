@@ -110,6 +110,7 @@ body {
 
 .slider-container {
 	padding: 0 20px;
+	clear: both;
 }
 
 .slider {
@@ -321,8 +322,8 @@ h2.title {
 .section-logo {
 	margin-bottom: 82px;
 	font-size: 0;
-	border-top: 2px solid #eeeeee;
-	border-bottom: 2px solid #eeeeee;
+/*	border-top: 2px solid #eeeeee;
+	border-bottom: 2px solid #eeeeee;*/
 }
 
 .section-link {
@@ -708,4 +709,9 @@ h1.title {
 
 .map {
 	clear: both;
+}
+
+.border {
+	padding: 0 20px;
+	border-bottom: 2px solid #eeeeee;
 }
