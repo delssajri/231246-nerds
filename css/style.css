@@ -355,6 +355,13 @@ h2.title {
 	background: url("../img/map-mark.jpg");
 }
 
+.number {
+	font-size: 45px;
+	line-height: 10px;
+	font-weight: bold;
+	text-align: center;
+}
+
 .address {
 	width: 220px;
 	padding: 48px 50px 48px 50px;
@@ -437,10 +444,17 @@ h2.title {
 }
 
 .popup {
-	box-sizing: border-box;
-	width: 960px;
-	padding: 72px 100px 86px 100px;
+	width: 760px;
+	padding: 74px 100px 86px 100px;
 	border: 4px solid black;
+}
+
+.popup-title {
+	font-size: 45px;
+	line-height: 45px;
+	font-weight: bold;
+	margin: 0;
+	margin-bottom: 50px;
 }
 
 .user-data {
@@ -448,15 +462,48 @@ h2.title {
 	vertical-align: top;
 	width: 360px;
 	margin-bottom: 38px;
+	margin-right: 36px;
+	font-size: 0;
+}
+
+.email {
+	margin-right: 0px;
 }
 
 .user-title {
 	display: block;
 	width: 100px;
+	margin-bottom: 12px;
+	font-size: 16px;
+	line-height: 18px;
 }
 
-.user-data .text {
+input[type="text"] {
 	display: block;
+	box-sizing: border-box;
+	width: 100%;
+	padding: 16px 0px 16px 16px;
+	border: 2px solid #d7dcde;
+
+}
+
+textarea {
+	padding: 16px 0 0 16px;
+	border: 2px solid #d7dcde;
+}
+
+input[value],
+textarea[value] {
+	color: #a1a1a1;
+}
+
+input[type="submit"] {
+	color: #ffffff;
+	border: none;
+}
+
+.user-text {
+	margin-bottom: 48px;
 }
 
 .user-text .user-title {
@@ -477,13 +524,14 @@ h2.title {
 
 h1.title {
 	width: 840px;
-	margin-top: 87px;
-	margin-bottom: 125px;
+	padding-top: 87px;
+	padding-bottom: 125px;
 	margin-left: auto;
 	margin-right: auto;
 	font-size: 55px;
 	line-height: 55px;
 	font-weight: bold;
+	clear: both;
 }
 
 .main-filter {
@@ -542,16 +590,29 @@ h1.title {
 .filter-title {
 	float: left;
 	width: 360px;
+	margin: 0;
+	padding: 18px 0;
+	font-weight: bold;
 }
 
 .filter-type {
-	box-sizing: border-box;
+	/*box-sizing: border-box;*/
 	float: left;
 	width: 290px;
-	padding: 0;
+	padding: 18px 0;
+	margin: 0;
 	margin-left: 40px;
 	font-size: 14px;
 	line-height: 18px;
+}
+
+.filter-type-link {
+	display: block;
+	color: #b2b2b2;
+}
+
+.filter-type-list:nth-child(0) {
+	color: #000000;
 }
 
 .filter-order {
@@ -560,13 +621,19 @@ h1.title {
 	padding: 0;
 }
 
-.up,
-.down {
+.sort {
 	display: inline-block;
 	width: 30px;
 	height: 40px;
 	padding: 0;
-	background-color: red;
+}
+
+.down {
+	background: url("../img/sort-down.png") no-repeat 50% 50%;
+}
+
+.up {
+	background: url("../img/sort-up.png") no-repeat 50% 50%;
 }
 
 .filter-type-list {
