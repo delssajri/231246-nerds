@@ -2,16 +2,18 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
+  <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
   <title>Дизайн-студия</title>
 </head>
 <body>
   <header class="main-header">
     <div class="container clearfix">
-      <nav class="main-navigation">
-        <a class="logo" href="index.html">
-          <img src="img/logo-header.png" width="160" height="65" alt="Логотип Нердс">
-        </a>
+      <a class="logo" href="index.html">
+        <img src="img/logo-header.png" width="160" height="65" alt="Логотип Нердс">
+      </a>
+      <nav class="main-navigation clearfix">
         <ul class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-link" href="#">Студия</a>
@@ -28,28 +30,35 @@
         </ul>
         <a class="user-block" href="#">Корзина</a>
       </nav>
-      <div class="slider-container">
+      <div class="slider-container clearfix">
         <div class="slider">
-          <h2 class="title">Долго, дорого, скрупулезно.</h2>
-          <p class="text">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-          <a class="btn btn-header" href="#">Узнать больше</a>
+          <div class="slider-one">
+            <h2 class="title">Долго, дорого, скрупулезно.</h2>
+            <p class="text">Математически выверенный дизайн<br> для вашего сайта или мобильного приложения</p>
+            <a class="btn btn-header" href="#">Узнать больше</a>
+          </div>  
         </div>
         <div class="slider">
-          <h2 class="title">Любим математику как никто другой</h2>
-          <p class="text">Никакого креатива, только математические формулы для расчета и расчета идеальных пропорций</p>
-          <a class="btn btn-header" href="#">Узнать больше</a>
+          <div class="slider-two">
+            <h2 class="title">Любим математику как никто другой</h2>
+            <p class="text">Никакого креатива, только математические формулы<br> для расчета идеальных пропорций.</p>
+            <a class="btn btn-header" href="#">Узнать больше</a>
+          </div>  
         </div>
         <div class="slider">
-          <h2 class="title">Только ночь, только хардкор</h2>
-          <p class="text">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается</p>
-          <a class="btn btn-header" href="#">Узнать больше</a>
+          <div class="slider-three">
+            <h2 class="title">Только ночь, только хардкор</h2>
+            <p class="text">Работать днем, как все? Мы против этого.<br>
+            Ближе к полуночи работа только начинается.</p>
+            <a class="btn btn-header" href="#">Узнать больше</a>
+          </div>
         </div>
       </div>
     </div>
   </header>
   <main class="main">
-    <div class="container">
-      <div class="features">
+    <div class="container clearfix">
+      <div class="features clearfix">
         <div class="feature-item">
           <img class="feature-img" src="img/site.jpg" width="300" height="146" alt="Веб-сайт">
           <p class="feature-title">Веб-сайты</p>
@@ -69,7 +78,8 @@
           <a class="btn btn-presentation" href="#">Заказать</a>
         </div>
       </div>
-      <div class="content">
+      <div class="border"></div>
+      <div class="content clearfix">
         <div class="column-left">
           <b class="content-title">Мы-маленькая, но гордая дизайн-студия из Краснодара</b>
           <p class="text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
@@ -100,10 +110,12 @@
         </div>
       </div>
       <div class="section-logo">
-        <a class="section-link" href="#"><img src="img/htmlacademy.png" width="199" height="68" alt="Логотип Html-academy">Html-academy</a>
-        <a class="section-link" href="#"><img src="img/borodinski.png" width="199" height="68" alt="Логотип Borodinski">Borodinski</a>
-        <a class="section-link" href="#"><img src="img/pink.png" width="199" height="68" alt="Логотип Pink">Pink</a>
-        <a class="section-link" href="#"><img src="img/mishka.png" width="199" height="68" alt="Логотип Mishka">Mishka</a>
+        <div class="border"></div>
+        <a class="section-link htmlacad-link" href="#"></a>
+        <a class="section-link borod-link" href="#"></a>
+        <a class="section-link pink-link" href="#"></a>
+        <a class="section-link mishka-link" href="#"></a>
+        <div class="border"></div>
       </div>
     </div>
     <div class="map">
@@ -116,7 +128,7 @@
     </div>
   </main>
   <footer class="main-footer">
-    <div class="container">
+    <div class="container clearfix">
       <div class="social">
         <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
         <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
@@ -134,17 +146,17 @@
     <form action="http://htmlacademy.ru" method="get">
       <div class="user-data">
         <label class="user-title" for="name-id">Ваше имя:</label>
-        <input type="text" name="user-name" id="name-id" value="Представьтесь, пожалуйста">
+        <input class="user" type="text" name="user-name" id="name-id" value="Представьтесь, пожалуйста">
       </div>
-      <div class="user-data">
+      <div class="user-data email">
         <label class="user-title" for="email-id">Ваш e-mail:</label>
-        <input type="text" name="user-email" id="email-id" value="Для отправки ответа">
+        <input class="user" type="text" name="user-email" id="email-id" value="Для отправки ответа">
       </div>
       <div class="user-text">
         <label class="user-title" for="letter-id">Текст письма:</label>
-        <textarea name="letter" id="letter-id" row="10">В свободной форме</textarea>
+        <textarea name="letter" id="letter-id" rows="4" value="В свободной форме">В свободной форме</textarea>
       </div>
-      <input type="submit" value="Отправить">
+      <input class="btn btn-send" type="submit" value="Отправить">
     </form>
   </div>
 </body>

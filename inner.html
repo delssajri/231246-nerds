@@ -2,16 +2,18 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
+  <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
   <title>Дизайн-студия</title>
 </head>
 <body>
   <header class="main-header">
     <div class="container clearfix">
-      <nav class="main-navigation">
-        <a class="logo" href="index.html">
-          <img src="img/logo-header.png" width="160" height="65" alt="Логотип Нердс">
-        </a>
+      <a class="logo" href="index.html">
+        <img src="img/logo-header.png" width="160" height="65" alt="Логотип Нердс">
+      </a>
+      <nav class="main-navigation clearfix">
         <ul class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-link" href="#">Студия</a>
@@ -32,13 +34,13 @@
     </div>
   </header>
   <main class="main">
-    <div class="container">
-      <form action="http://htmlacademy.ru" method="get">
+    <div class="container clearfix">
+      <form class="main-filter" action="http://htmlacademy.ru" method="get">
         <div class="range-filter">
           <p class="filter-title">Стоимость:</p>
           <div class="range-controls">
             <div class="scale">
-              <div class="bar"></div>
+              <div class="bar" style="margin-left: 20%; width: 30%"></div>
             </div>
             <div class="toggle toggle-min"></div>
             <div class="toggle toggle-max"></div>
@@ -80,7 +82,7 @@
               <input type="checkbox" name="news" id="news-id" checked>
               <label for="news-id">Новости</label>
             </li>
-            <li>
+            <li class="list">
               <input type="checkbox" name="gallery" id="gallery-id">
               <label for="gallery-id">Галерея</label>
             </li>
@@ -93,7 +95,7 @@
         <button class="btn btn-filter" type="submit">Показать</button>
       </form>
       <div class="pattern-box">
-        <div class="filter-price">
+        <div class="filter-price clearfix">
           <p class="filter-title">Сортировать:</p>
           <ul class="filter-type">
             <li class="filter-type-list">
@@ -107,8 +109,8 @@
             </li>
           </ul>
           <ul class="filter-order">
-            <a class="up" href="#"></a>
-            <a class="down" href="#"></a>
+            <a class="sort sort-down" href="#"></a>
+            <a class="sort sort-up" href="#"></a>
           </ul>
         </div>
         <div class="gallery">
@@ -121,63 +123,84 @@
             <img class="photo-site" src="img/sedona-page.jpg" width="360" height="576" alt="Sedona">
             <div class="site-hover">
               <h2 class="site-hover-title">Sedona</h2>
-              <p class="site-hover-text">Информационный сайт для туристов</p>
-              <a class="btn btn-site-hover">9 900 Руб.</a>
+              <p class="site-hover-text sedona">Информационный сайт для туристов</p>
+              <a class="btn btn-site-hover" href="#">9 900 Руб.</a>
             </div>
           </article>
           <article class="pattern">
-            <div class="broswer"></div>
+            <div class="broswer">
+              <span class="round"></span>
+              <span class="round"></span>
+              <span class="round"></span>
+            </div>
             <img class="photo-site" src="img/pink-page.jpg" width="360" height="576" alt="Pink">
             <div class="site-hover">
               <h2 class="site-hover-title">Pink App</h2>
-              <p class="site-hover-text">Продуктовый лендинг приложения для IOS и Android</p>
-              <a class="btn btn-site-hover">9 900 Руб.</a>
+              <p class="site-hover-text pink">Продуктовый лендинг приложения для IOS и Android</p>
+              <a class="btn btn-site-hover" href="#">9 900 Руб.</a>
             </div>
           </article>
           <article class="pattern">
-            <div class="broswer"></div>
+            <div class="broswer">
+              <span class="round"></span>
+              <span class="round"></span>
+              <span class="round"></span>
+            </div>
             <img class="photo-site" src="img/borodinski-page.jpg" width="360" height="576" alt="Borodinski">
             <div class="site-hover">
               <h2 class="site-hover-title">Barbershop</h2>
-              <p class="site-hover-text">Сайт салона красоты. Для мужчин, да</p>
-              <a class="btn btn-site-hover">9 900 Руб.</a>
+              <p class="site-hover-text barbershop">Сайт салона красоты. Для мужчин, да</p>
+              <a class="btn btn-site-hover" href="#">9 900 Руб.</a>
             </div>
           </article>
           <article class="pattern">
-            <div class="broswer"></div>
+            <div class="broswer">
+              <span class="round"></span>
+              <span class="round"></span>
+              <span class="round"></span>
+            </div>
             <img class="photo-site" src="img/mishka-page.jpg" width="360" height="576" alt="Mishki">
             <div class="site-hover">
               <h2 class="site-hover-title">Mishka</h2>
-              <p class="site-hover-text">Интернет-магазин вязаных игрушек</p>
-              <a class="btn btn-site-hover">9 900 Руб.</a>
+              <p class="site-hover-text mishka">Интернет-магазин вязаных игрушек</p>
+              <a class="btn btn-site-hover" href="#">9 900 Руб.</a>
             </div>
           </article>
           <article class="pattern">
-            <div class="broswer"></div>
+            <div class="broswer">
+              <span class="round"></span>
+              <span class="round"></span>
+              <span class="round"></span>
+            </div>
             <img class="photo-site" src="img/aplus-page.jpg" width="360" height="576" alt="Study">
             <div class="site-hover">
               <h2 class="site-hover-title">A plus</h2>
-              <p class="site-hover-text">Лендинг курсов повышения квалификации</p>
-              <a class="btn btn-site-hover">9 900 Руб.</a>
+              <p class="site-hover-text plus">Лендинг курсов повышения квалификации</p>
+              <a class="btn btn-site-hover" href="#">9 900 Руб.</a>
             </div>
           </article>
           <article class="pattern">
-            <div class="broswer"></div>
+            <div class="broswer">
+              <span class="round"></span>
+              <span class="round"></span>
+              <span class="round"></span>
+            </div>
             <img class="photo-site" src="img/kvast-page.jpg" width="360" height="576" alt="Кваст">
             <div class="site-hover">
               <h2 class="site-hover-title">Кваст</h2>
-              <p class="site-hover-text">Промо-сайт производителя крафтового кваса</p>
-              <a class="btn btn-site-hover">9 900 Руб.</a>
+              <p class="site-hover-text kvast">Промо-сайт производителя крафтового кваса</p>
+              <a class="btn btn-site-hover" href="#">9 900 Руб.</a>
             </div>
           </article>
         </div> 
         <div class="pages-box">
-          <a class="active page" href="#">1</a>
+          <a class="page page-active" href="#">1</a>
           <a class="page" href="#">2</a>
           <a class="page" href="#">3</a>
-          <a class="page next" href="#">Следующая</a>
+          <a class="page page-next" href="#">СЛЕДУЮЩАЯ</a>
         </div>
-      </div>  
+      </div>
+    </div>
     <div class="map">
       <div class="address">
         <p class="name">Nerds design studio</p>
@@ -188,7 +211,7 @@
     </div>
   </main>
   <footer class="main-footer">
-    <div class="container">
+    <div class="container clearfix">
       <div class="social">
         <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
         <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
@@ -206,17 +229,17 @@
     <form action="http://htmlacademy.ru" method="get">
       <div class="user-data">
         <label class="user-title" for="name-id">Ваше имя:</label>
-        <input type="text" name="user-name" id="name-id" value="Представьтесь, пожалуйста">
+        <input class="user" type="text" name="user-name" id="name-id" value="Представьтесь, пожалуйста">
       </div>
-      <div class="user-data">
+      <div class="user-data email">
         <label class="user-title" for="email-id">Ваш e-mail:</label>
-        <input type="text" name="user-email" id="email-id" value="Для отправки ответа">
+        <input class="user" type="text" name="user-email" id="email-id" value="Для отправки ответа">
       </div>
       <div class="user-text">
         <label class="user-title" for="letter-id">Текст письма:</label>
-        <textarea name="letter" id="letter-id" row="10">В свободной форме</textarea>
-      </div> 
-      <input type="submit" value="Отправить">
+        <textarea name="letter" id="letter-id" rows="4" value="В свободной форме">В свободной форме</textarea>
+      </div>
+      <input class="btn btn-send" type="submit" value="Отправить">
     </form>
   </div>
 </body>
