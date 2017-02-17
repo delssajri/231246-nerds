@@ -99,7 +99,7 @@
           <p class="filter-title">Сортировать:</p>
           <ul class="filter-type">
             <li class="filter-type-list">
-              <a class="filter-type-link" href="#">По цене</a>
+              <a class="filter-type-link active-link" href="#">По цене</a>
             </li>
             <li class="filter-type-list">
               <a class="filter-type-link" href="#">По типу</a>
@@ -109,7 +109,7 @@
             </li>
           </ul>
           <ul class="filter-order">
-            <a class="sort sort-down" href="#"></a>
+            <a class="sort sort-down active-link" href="#"></a>
             <a class="sort sort-up" href="#"></a>
           </ul>
         </div>
@@ -124,7 +124,7 @@
             <div class="site-hover">
               <h2 class="site-hover-title">Sedona</h2>
               <p class="site-hover-text sedona">Информационный сайт для туристов</p>
-              <a class="btn btn-site-hover" href="#">9 900 Руб.</a>
+              <a class="btn site-hover-btn" href="#">9 900 Руб.</a>
             </div>
           </article>
           <article class="pattern">
@@ -137,7 +137,7 @@
             <div class="site-hover">
               <h2 class="site-hover-title">Pink App</h2>
               <p class="site-hover-text pink">Продуктовый лендинг приложения для IOS и Android</p>
-              <a class="btn btn-site-hover" href="#">9 900 Руб.</a>
+              <a class="btn site-hover-btn" href="#">9 900 Руб.</a>
             </div>
           </article>
           <article class="pattern">
@@ -150,7 +150,7 @@
             <div class="site-hover">
               <h2 class="site-hover-title">Barbershop</h2>
               <p class="site-hover-text barbershop">Сайт салона красоты. Для мужчин, да</p>
-              <a class="btn btn-site-hover" href="#">9 900 Руб.</a>
+              <a class="btn site-hover-btn" href="#">9 900 Руб.</a>
             </div>
           </article>
           <article class="pattern">
@@ -163,7 +163,7 @@
             <div class="site-hover">
               <h2 class="site-hover-title">Mishka</h2>
               <p class="site-hover-text mishka">Интернет-магазин вязаных игрушек</p>
-              <a class="btn btn-site-hover" href="#">9 900 Руб.</a>
+              <a class="btn site-hover-btn" href="#">9 900 Руб.</a>
             </div>
           </article>
           <article class="pattern">
@@ -176,7 +176,7 @@
             <div class="site-hover">
               <h2 class="site-hover-title">A plus</h2>
               <p class="site-hover-text plus">Лендинг курсов повышения квалификации</p>
-              <a class="btn btn-site-hover" href="#">9 900 Руб.</a>
+              <a class="btn site-hover-btn" href="#">9 900 Руб.</a>
             </div>
           </article>
           <article class="pattern">
@@ -189,7 +189,7 @@
             <div class="site-hover">
               <h2 class="site-hover-title">Кваст</h2>
               <p class="site-hover-text kvast">Промо-сайт производителя крафтового кваса</p>
-              <a class="btn btn-site-hover" href="#">9 900 Руб.</a>
+              <a class="btn site-hover-btn" href="#">9 900 Руб.</a>
             </div>
           </article>
         </div> 
@@ -226,14 +226,14 @@
   <div class="popup">
     <h2 class="popup-title">Напишите нам</h2>
     <button type="button"></button>
-    <form action="http://htmlacademy.ru" method="get">
+    <form class="popup-form" action="http://htmlacademy.ru" method="get">
       <div class="user-data">
         <label class="user-title" for="name-id">Ваше имя:</label>
-        <input class="user" type="text" name="user-name" id="name-id" value="Представьтесь, пожалуйста">
+        <input class="user-field user-name" type="text" name="user-name" id="name-id" value="Представьтесь, пожалуйста" pattern="tanya">
       </div>
-      <div class="user-data email">
+      <div class="user-data email-field">
         <label class="user-title" for="email-id">Ваш e-mail:</label>
-        <input class="user" type="text" name="user-email" id="email-id" value="Для отправки ответа">
+        <input class="user-field" type="text" name="user-email" id="email-id" value="Для отправки ответа">
       </div>
       <div class="user-text">
         <label class="user-title" for="letter-id">Текст письма:</label>
