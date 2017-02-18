@@ -54,16 +54,22 @@
           <p class="filter-title">Сетка:</p>
           <ul class="filter-list">
             <li class="list">
+              <label class="radio-type" for="adaptive-id">
               <input type="radio" name="type-grid" id="adaptive-id">
-              <label for="adaptive-id">Адаптивная</label>
+              <span class="radio-indicator"></span>
+              Адаптивная</label>
             </li>
             <li class="list">
+              <label class="radio-type" for="fixed-id">
               <input type="radio" name="type-grid" id="fixed-id">
-              <label for="fixed-id">Фиксированная</label>
+              <span class="radio-indicator"></span>
+              Фиксированная</label>
             </li>
             <li class="list">
+              <label class="radio-type" for="rubber-id">
               <input type="radio" name="type-grid" id="rubber-id">
-              <label for="rubber-id">Резиновая</label>
+              <span class="radio-indicator"></span>
+              Резиновая</label>
             </li>
           </ul>
         </div>
@@ -71,24 +77,35 @@
           <p class="filter-title">Особенности:</p>
           <ul class="filter-list">
             <li class="list">
+              <label class="checkbox-type" for="slider-id">
               <input type="checkbox" name="slider" id="slider-id" checked>
-              <label for="slider-id">Слайдер</label>
+              <span class="checkbox-indicator"></span>
+              Слайдер</label>
             </li>
             <li class="list">
+              <label class="checkbox-type" for="advantage-block-id">
               <input type="checkbox" name="advantage-block" id="advantage-block-id">
-              <label for="advantage-block-id">Блок преимуществ</label>
+              <span class="checkbox-indicator"></span>
+              Блок преимуществ</label>
             </li>
             <li class="list">
+              <label class="checkbox-type" for="news-id">
               <input type="checkbox" name="news" id="news-id" checked>
-              <label for="news-id">Новости</label>
+              <span class="checkbox-indicator"></span>
+              Новости</label>
             </li>
             <li class="list">
+              <label class="checkbox-type" for="gallery-id">
               <input type="checkbox" name="gallery" id="gallery-id">
-              <label for="gallery-id">Галерея</label>
+              <span class="checkbox-indicator"></span>
+              Галерея
+              </label>
             </li>
             <li class="list">
+              <label class="checkbox-type" for="basket-id">
               <input type="checkbox" name="basket" id="basket-id">
-              <label for="basket-id">Корзина</label>
+              <span class="checkbox-indicator"></span>
+              Корзина</label>
             </li>
           </ul>
         </div>
@@ -225,7 +242,7 @@
   </footer>
   <div class="popup">
     <h2 class="popup-title">Напишите нам</h2>
-    <button type="button"></button>
+    <button class="popup-button" type="button"></button>
     <form class="popup-form" action="http://htmlacademy.ru" method="get">
       <div class="user-data">
         <label class="user-title" for="name-id">Ваше имя:</label>
