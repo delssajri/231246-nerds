@@ -30,7 +30,7 @@
         </ul>
         <a class="user-block" href="#">Корзина</a>
       </nav>
-      <div class="slider-container clearfix">
+      <div class="slider-container">
         <div class="slider-controls">
           <i class="active"></i>
           <i></i>
@@ -39,21 +39,21 @@
         <div class="slider">
           <div class="slider-one">
             <h2 class="title">Долго, дорого, скрупулезно.</h2>
-            <p class="text">Математически выверенный дизайн<br> для вашего сайта или мобильного приложения</p>
+            <p class="text text-slider">Математически выверенный дизайн<br> для вашего сайта или мобильного приложения</p>
             <a class="btn btn-header" href="inner.html">Узнать больше</a>
           </div>
         </div>
         <div class="slider">
           <div class="slider-two">
             <h2 class="title">Любим математику как никто другой</h2>
-            <p class="text">Никакого креатива, только математические формулы<br> для расчета идеальных пропорций.</p>
+            <p class="text text-slider">Никакого креатива, только математические формулы<br> для расчета идеальных пропорций.</p>
             <a class="btn btn-header" href="#">Узнать больше</a>
           </div> 
         </div>
         <div class="slider">
           <div class="slider-three">
             <h2 class="title">Только ночь, только хардкор</h2>
-            <p class="text">Работать днем, как все? Мы против этого.<br>
+            <p class="text text-slider">Работать днем, как все? Мы против этого.<br>
             Ближе к полуночи работа только начинается.</p>
             <a class="btn btn-header" href="#">Узнать больше</a>
           </div>
@@ -88,7 +88,7 @@
       </div>
       <div class="content clearfix">
         <div class="column-left">
-          <b class="content-title">Мы-маленькая, но гордая дизайн-студия из Краснодара</b>
+          <b class="content-title">Мы &#8212; маленькая, но гордая дизайн-студия из Краснодара.</b>
           <p class="text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
           <p class="detail">Выполняем заказы на разработку:</p>
           <ul class="column-left-list">
@@ -117,25 +117,45 @@
         </div>
       </div>
       <div class="section-logo">
-      <div class="border-main">
-        <div class="border"></div>
-      </div>
+        <div class="border-main">
+          <div class="border"></div>
+        </div>
         <a class="section-link htmlacad-link" href="#"></a>
         <a class="section-link borod-link" href="#"></a>
         <a class="section-link pink-link" href="#"></a>
         <a class="section-link mishka-link" href="#"></a>
         <div class="border-main">
-        <div class="border"></div>
-      </div>
+          <div class="border"></div>
+        </div>
       </div>
     </div>
     <div class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" width="1440" height="416" frameborder="0" style="border:0" allowfullscreen></iframe>
       <div class="address">
         <p class="name">Nerds design studio</p>
-        <p class="text">191186, Санкт-Петербург, ул. Б. Конюшенная,д. 19/8</p>
-        <p class="text">тел. +7(812)275-75-75</p>
+        <p class="text">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        <p class="text-number">тел. +7 (812) 275-75-75</p>
         <a class="btn btn-contact-us" href="#">Напишите нам</a>
       </div>
+      <div class="modal-content">
+    <h2 class="popup-title">Напишите нам</h2>
+    <button class="popup-button" type="button"></button>
+    <form class="popup-form" action="http://htmlacademy.ru" method="get">
+      <div class="user-data">
+        <label class="user-title" for="name-id">Ваше имя:</label>
+        <input class="user-field" type="text" name="user-name" id="name-id" pattern="[^0-9]*" placeholder="Представьтесь, пожалуйста">
+      </div>
+      <div class="user-data email-field">
+        <label class="user-title" for="email-id">Ваш e-mail:</label>
+        <input class="user-field" type="email" name="user-email" id="email-id" placeholder="Для отправки ответа">
+      </div>
+      <div class="user-text">
+        <label class="user-title" for="letter-id">Текст письма:</label>
+        <textarea name="letter" id="letter-id" rows="8" placeholder="В свободной форме">В свободной форме</textarea>
+      </div>
+      <input class="btn btn-send" type="submit" value="Отправить">
+    </form>
+  </div>
     </div>
   </main>
   <footer class="main-footer">
@@ -147,28 +167,61 @@
       </div>
       <div class="befriend">
         <b class="footer-title">Давайте дружить, это выгодно!</b>
-        <p class="text">Скидка 10% для друзей из социальных сетей.</p>
+        <p class="footer-text">Скидка 10% для друзей из социальных сетей.</p>
       </div>
     </div>
   </footer>
-  <div class="popup main-page">
+  <div class="modal-content">
     <h2 class="popup-title">Напишите нам</h2>
     <button class="popup-button" type="button"></button>
     <form class="popup-form" action="http://htmlacademy.ru" method="get">
       <div class="user-data">
         <label class="user-title" for="name-id">Ваше имя:</label>
-        <input class="user-field user-name" type="text" name="user-name" id="name-id" value="Представьтесь, пожалуйста" pattern="tanya">
+        <input class="user-field user-name" type="text" name="user-name" id="name-id" placeholder="Представьтесь, пожалуйста" pattern="tanya">
       </div>
       <div class="user-data email-field">
         <label class="user-title" for="email-id">Ваш e-mail:</label>
-        <input class="user-field" type="text" name="user-email" id="email-id" value="Для отправки ответа">
+        <input class="user-field" type="text" name="user-email" id="email-id" placeholder="Для отправки ответа">
       </div>
       <div class="user-text">
         <label class="user-title" for="letter-id">Текст письма:</label>
-        <textarea name="letter" id="letter-id" rows="8" value="В свободной форме">В свободной форме</textarea>
+        <textarea name="letter" id="letter-id" rows="8" placeholder="В свободной форме"></textarea>
       </div>
       <input class="btn btn-send" type="submit" value="Отправить">
     </form>
   </div>
+ <script>
+    var link = document.querySelector(".btn-contact-us");
+    var popup = document.querySelector(".modal-content");
+    var close = document.querySelector(".popup-button");
+    var form = popup.querySelector("form");
+    var login = popup.querySelector("[name=user-name]");
+    var email = popup.querySelector("[name=user-email]");
+
+    link.addEventListener("click", function(event) {
+      event.preventDefault();
+      popup.classList.add("modal-content-show");
+      login.focus();
+    });
+
+    window.addEventListener("keydown", function(event) {
+    if (event.keyCode === 27) {
+      if (popup.classList.contains("modal-content-show")) {
+        popup.classList.remove("modal-content-show");
+}
+} });
+
+    close.addEventListener("click", function(event) {
+      event.preventDefault();
+      popup.classList.remove("modal-content-show");
+    });
+
+     form.addEventLister("submit", function(event) {
+       if (!login.value || !email.value) {
+         event.preventDefault();
+        console.log("dddd");
+     }
+    });
+  </script> 
 </body>
 </html>
